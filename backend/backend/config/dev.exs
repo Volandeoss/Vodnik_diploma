@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :backend, Backend.Repo,
-  username: System.get_env("DATABASE_USERNAME") || "postgres",
-  password: System.get_env("DATABASE_PASSWORD") || "postgres",
+  username: System.get_env("DATABASE_USERNAME"),
+  password: System.get_env("DATABASE_PASSWORD"),
   hostname: System.get_env("DATABASE_HOSTNAME") || "localhost",
   database: System.get_env("DATABASE_HOSTNAME") || "backend_dev",
   stacktrace: true,
