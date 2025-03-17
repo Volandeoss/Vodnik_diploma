@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import '@styles/globals.css'
-import { Main } from 'next/document'
 import Header from '@/components/layout/header/Header'
 import Footer from '@/components/layout/footer/Footer'
 
@@ -32,9 +31,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-  
+        <main className="flex-grow">
           {children}
-   
+        </main>
         <Footer />
       </body>
     </html>
