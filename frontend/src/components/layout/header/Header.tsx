@@ -40,7 +40,9 @@ export default function Header() {
 								{item.name}
 							</Link>
 						))}
-						<button className="px-2 py-2 bg-sky-900 text-white font-bold rounded hover:bg-sky-800 transition duration-300 transform hover:scale-95">Увійти</button>
+						<Link href='auth/login'>
+							<button className="px-2 py-2 bg-sky-900 text-white font-bold rounded hover:bg-sky-800 transition duration-300 transform hover:scale-95">Увійти</button>
+						</Link>
 						<select className="ml-4 rounded-md border-gray-300 py-1 px-2 text-sm">
 							<option value="en">EN</option>
 							<option value="uk">UK</option>

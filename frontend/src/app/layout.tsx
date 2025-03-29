@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import '@styles/globals.css'
 import Header from '@/components/layout/header/Header'
 import Footer from '@/components/layout/footer/Footer'
-
+import '@/styles/globals.css'
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nuwm Conf",
-  description: "Dev Max S. and Vlad O.",
+  authors: "Max Siokh and Vlad Ossas",
+  description: "Вебсайт для проведення конференцій",
 
 }
 

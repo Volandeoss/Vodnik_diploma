@@ -1,0 +1,15 @@
+.inputWrapper {
+  @apply flex flex-col min-h-[78px];
+}
+
+.input {
+  @apply w-full h-[50px] rounded-lg border-2 border-gray-300 pl-2 focus:border-primary focus:outline-none placeholder-gray-500 placeholder-opacity-70 text-sm;
+}
+
+.input__error {
+  @apply w-full text-left text-red-500 text-xs;
+}
+
+.input__Error {
+  @apply border-red-500;
+}
