@@ -1,0 +1,50 @@
+.container {
+  @apply flex flex-col justify-center;
+}
+
+.auth {
+  @apply flex justify-center items-center h-full p-5 gap-5 flex-wrap;
+}
+.loginForm,
+.registerForm {
+  @apply flex flex-col text-center justify-center items-center w-[600px] h-[500px] rounded-lg border-2 border-gray-300;
+}
+
+.registerForm {
+  @apply h-auto max-w-[600px];
+}
+
+.form {
+  @apply w-11/12 flex flex-col justify-center items-center text-base;
+  & > h1 {
+    @apply text-base;
+  }
+  &__inputs {
+    @apply flex flex-col gap-1 w-full;
+    & > div {
+      @apply flex items-center justify-between gap-1;
+      & > span {
+        @apply text-sm font-normal;
+      }
+    }
+  }
+  &__buttonWrapper {
+    @apply flex justify-center items-center w-full;
+  }
+  &__redirect {
+    @apply w-full flex justify-center gap-1 items-center text-sm;
+    & > a {
+      @apply text-sm font-semibold text-gray-700 cursor-pointer no-underline;
+    }
+  }
+  &__checkboxContainer {
+    @apply pb-2.5;
+  }
+  &__forgotPassword {
+    @apply no-underline text-sm font-normal text-gray-700 transition duration-300 hover:text-blue-600;
+  }
+}
+
+.authButton {
+  @apply w-full h-12 rounded-lg border-none bg-blue-500 text-white text-lg font-semibold cursor-pointer transition duration-500 hover:bg-blue-600;
+}
